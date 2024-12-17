@@ -1,4 +1,4 @@
-// Created     : 2024-12-17 9:45:11
+// Created     : 2024-12-17 10:50:8
 // DLL         : C:\Program Files (x86)\DHI\MIKE Zero\2024\bin\x64\pfs2004.dll
 // Version     : 22.0.3.17314
 
@@ -1616,7 +1616,7 @@
             use_end_time = 1
             first_time_step = 0
             last_time_step = 424212
-            time_step_frequency = 1
+            time_step_frequency = 6
             number_of_points = 1
             [POINT_1]
                name = 'Holyrood Bay'

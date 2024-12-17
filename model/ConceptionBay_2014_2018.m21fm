@@ -1,4 +1,4 @@
-// Created     : 2024-12-17 9:44:52
+// Created     : 2024-12-17 10:50:22
 // DLL         : C:\Program Files (x86)\DHI\MIKE Zero\2024\bin\x64\pfs2004.dll
 // Version     : 22.0.3.17314
 
@@ -1602,7 +1602,7 @@
 
          [OUTPUT_2]
             Touched = 1
-            include = 0
+            include = 1
             title = 'Point'
             file_name = 'points.dfs0'
             type = 1
@@ -1616,47 +1616,15 @@
             use_end_time = 1
             first_time_step = 0
             last_time_step = 525900
-            time_step_frequency = 1
-            number_of_points = 5
+            time_step_frequency = 6
+            number_of_points = 1
             [POINT_1]
-               name = 'HarbourGrace'
-               x = -53.218
-               y = 47.685
-               z = -145.4856333732603
-               layer = 1
-            EndSect  // POINT_1
-
-            [POINT_2]
-               name = 'BellIsland'
-               x = -52.91
-               y = 47.632
-               z = -145.4856333732603
-               layer = 1
-            EndSect  // POINT_2
-
-            [POINT_3]
-               name = 'PortugalCove'
-               x = -52.864
-               y = 47.629
-               z = -145.4856333732603
-               layer = 1
-            EndSect  // POINT_3
-
-            [POINT_4]
-               name = 'LongPond'
-               x = -52.976
-               y = 47.529
-               z = -145.4856333732603
-               layer = 1
-            EndSect  // POINT_4
-
-            [POINT_5]
                name = 'Holyrood Bay'
                x = -53.135
                y = 47.402
                z = -145.4856333732603
                layer = 1
-            EndSect  // POINT_5
+            EndSect  // POINT_1
 
             [LINE]
                number_of_points = 2
@@ -1740,8 +1708,8 @@
                V_VELOCITY = 1
                P_FLUX = 0
                Q_FLUX = 0
-               CURRENT_SPEED = 1
-               CURRENT_DIRECTION = 1
+               CURRENT_SPEED = 0
+               CURRENT_DIRECTION = 0
                WIND_U_VELOCITY = 0
                WIND_V_VELOCITY = 0
                AIR_PRESSURE = 0
