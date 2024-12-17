@@ -8,8 +8,8 @@ import mikeio.generic
 obs_fldr = "../observations/" 
 df_stn = pd.read_csv(obs_fldr + "stations.csv", index_col=0)
 
-def read_and_concatenate_ds(in_fnames,out_fname="../output/Area_all.dfsu"):
-    
+def concatenate_and_read_ds(in_fnames,out_fname="../output/Area.dfsu"):
+
     if Path(out_fname).exists():
         return mikeio.read(out_fname) 
     elif len(in_fnames)==1:
