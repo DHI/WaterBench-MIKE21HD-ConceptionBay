@@ -8,18 +8,6 @@ import mikeio.generic
 obs_fldr = "../observations/" 
 df_stn = pd.read_csv(obs_fldr + "stations.csv", index_col=0)
 
-def concatenate_and_read_ds(in_fnames,out_fname="../output/Area.dfsu"):
-
-    if Path(out_fname).exists():
-        return mikeio.read(out_fname) 
-    elif len(in_fnames)==1:
-        return mikeio.read(in_fnames[0])
-    else:
-        mikeio.generic.concat(in_fnames, out_fname, keep="first")
-        return mikeio.read(out_fname)
-
-
-
 def get_wl_point_obs():
     """Get water level point observations as list of PointObservation objects"""
     q = ms.Quantity(name="Surface Elevation", unit="meter")
