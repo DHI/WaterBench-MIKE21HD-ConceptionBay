@@ -10,7 +10,7 @@ Files:
 
 * **README**. Description of dataset with details on citations, data processing, and background information. 
 * **WaterBench-MIKE21HD-ConceptionBay.zip**: model setup, input data (e.g., boundary conditions, wind), observational data, and code for data exploration and model validation. 
-* **MIKE21HD-ConceptionBay-output.zip**: 10-years model result files `Area.dfsu` and `Points.dfs0` (~7 GB).
+* **MIKE21HD-ConceptionBay-output.zip**: 9-years model result files `Area.dfsu` and `Points.dfs0` (~16 GB).
 
 
 ## DOI
