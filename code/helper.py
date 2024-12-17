@@ -12,10 +12,11 @@ def read_and_concatenate_ds(in_fnames,out_fname="../output/Area_all.dfsu"):
     
     if Path(out_fname).exists():
         return mikeio.read(out_fname) 
+    elif len(in_fnames)==1:
+        return mikeio.read(in_fnames[0])
     else:
         mikeio.generic.concat(in_fnames, out_fname, keep="first")
         return mikeio.read(out_fname)
-
 
 
 
