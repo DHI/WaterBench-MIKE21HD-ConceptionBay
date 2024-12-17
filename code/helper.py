@@ -2,8 +2,6 @@ import glob
 from pathlib import Path
 import pandas as pd
 import modelskill as ms
-import mikeio
-import mikeio.generic
 
 obs_fldr = "../observations/" 
 df_stn = pd.read_csv(obs_fldr + "stations.csv", index_col=0)
