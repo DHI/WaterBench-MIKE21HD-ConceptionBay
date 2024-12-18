@@ -99,6 +99,7 @@ Below, the comparison between the observational data from one such measurement s
 ![](figures/altimetry_comparison.png)
 
 
+
 ## Data sources
 
 Several data sources contribute to this case. They are outlined below. 
