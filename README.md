@@ -62,7 +62,7 @@ This repository contains the setup file, input data and observation data, as wel
 
 MIKE 21 Flow Model FM is a modelling system based on a flexible mesh approach. The modelling system has been developed for applications within oceanographic, coastal and estuarine environments. The model is based on the numerical solution of the two-dimensional shallow water equations - the depth-integrated incompressible Reynolds averaged Navier-Stokes equations. More information can be found [in the documentation](https://manuals.mikepoweredbydhi.help/latest/Coast_and_Sea/MIKE_FM_HD_2D.pdf).
 
-The Conception Bay mesh consists of triangular elements in a higher resolution close to the coast than on deeper waters, and for each node a depth value is assigned by interpolating the EMODnet bathymetry data. The mesh is shown in the figure below. It consists of a total of 8474 elements covering the area of approximately 900 $km^2$.
+The Conception Bay mesh consists of triangular elements in a higher resolution close to the coast than on deeper waters, and for each node a depth value is assigned by interpolating the bathymetry data. The mesh is shown in the figure below. It consists of a total of 8474 elements covering the area of approximately 900 $km^2$.
 
 ![](figures/geometry.png)
 
