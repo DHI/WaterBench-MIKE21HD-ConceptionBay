@@ -95,7 +95,7 @@ The model is validated by comparison to observational data from a measurement st
 
 Below, the comparison between the observational data from one such measurement station and MIKE 21 is shown first followed by the comparison to the altimetry data. The production of these and many more plots is found in the notebooks code/model_validation_*.ipynb.
 
-![](figures/modelskill_comparison.png)
+![](figures/modelskill_comparison_HolyroodBay.png)
 ![](figures/altimetry_comparison.png)
 
 
