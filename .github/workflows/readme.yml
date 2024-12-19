@@ -23,7 +23,7 @@ jobs:
           tinytex: true
       - name: Render README.md to PDF
         run: |
-          quarto render README.md --to pdf --output README.pdf
+          quarto render README.md --to pdf --output .publish/README.pdf
 
       - name: Commit PDF
         run: |
