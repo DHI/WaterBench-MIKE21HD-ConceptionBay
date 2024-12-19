@@ -1,5 +1,4 @@
 import glob
-from pathlib import Path
 import pandas as pd
 import modelskill as ms
 
@@ -9,34 +8,8 @@ df_stn = pd.read_csv(obs_fldr + "stations.csv", index_col=0)
 def get_wl_point_obs():
     """Get water level point observations as list of PointObservation objects"""
     q = ms.Quantity(name="Surface Elevation", unit="meter")
-    wllist = []
-    for i, row in df_stn.iterrows():
-        if Path(obs_fldr + f"{i}_wl.csv").exists():
-            df = pd.read_csv(obs_fldr + f"{i}_wl.csv", index_col=0)
-            df.index = pd.to_datetime(df.index, format="ISO8601")
-            o = ms.PointObservation(df.water_level, x=row['Longitude'], y=row['Latitude'], name=i, quantity=q)
-        elif Path(obs_fldr + f"{i}_wl.dfs0").exists():
-            o = ms.PointObservation(obs_fldr + f"{i}_wl.dfs0", x=row['Longitude'], y=row['Latitude'], name=i, quantity=q)
-        wllist.append(o)
-    return wllist
-
-def get_u_v_point_obs():
-    """Get current point observations as two lists of PointObservation objects"""
-    qu = ms.Quantity(name="u-current", unit="m/s")
-    qv = ms.Quantity(name="v-current", unit="m/s")
-    ulist = []
-    vlist = []
-    for i, row in df_stn.iterrows():
-        if not Path(obs_fldr + f"{i}_u_v.csv").exists():
-            continue
-        df = pd.read_csv(obs_fldr + f"{i}_u_v.csv", index_col=0) 
-        df.index = pd.to_datetime(df.index, format="ISO8601")   
-        x, y = row['Longitude'], row['Latitude']
-        ou = ms.PointObservation(df["u"], x=x, y=y, name=i, quantity=qu)
-        ulist.append(ou)
-        ov = ms.PointObservation(df["v"], x=x, y=y, name=i, quantity=qv)
-        vlist.append(ov)
-    return ulist, vlist
+    fn = obs_fldr + "Holyrood_Bay_wl.dfs0"
+    return ms.PointObservation(fn, x=-53.135, y=47.402, name="Holyrood Bay", quantity=q)
 
 def get_altimetry_obs(quality=None):
     """Get altimetry observations as list of TrackObservation objects"""

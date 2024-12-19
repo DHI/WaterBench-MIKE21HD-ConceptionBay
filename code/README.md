@@ -1,6 +1,6 @@
 # Python and libraries used in the notebooks
 
-Python 3.13.0
+Python 3.12
 
 Library | Version
 --- | ---
