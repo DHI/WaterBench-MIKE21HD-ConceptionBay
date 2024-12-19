@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - README.md  # Only trigger the workflow when README.md changes
+  workflow_dispatch:  # Allow manual trigger
 
 jobs:
   render-pdf:
