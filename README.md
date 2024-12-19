@@ -71,7 +71,7 @@ A simulation can be performed with the [MIKE modelling software](https://www.dhi
 - the water levels and current velocities on the North boundary
 - wind velocities and air pressure in the domain.
 
-This input data can be found in the [/input](/input) folder. Model parameters, e.g. bed resistance constant, can be calibrated by comparing the model simulations to observational data. 
+This input data can be found in the [/input](/input) folder. Model parameters, e.g., bed resistance constant, can be calibrated by comparing the model simulations to observational data. 
 
 The outputs of the model are given as a timeseries for each mesh element on the spatial domain containing the variables:
 - the surface elevation,
