@@ -53,7 +53,7 @@ Separately from the current repository, you can find the output zip file (in Zen
 
 ## Introduction
 
-This folder contains data for a simulation with the MIKE 21 Flow Model FM in Conception Bay located in Newfoundland, Canada. The water level in this area is heavily influenced by semidiurnal tides from the Atlantic Ocean, and wind-driven circulation plays an important role in the area.  The domain has one open boundary to the ocean to the North.
+This folder contains data for a simulation with the MIKE 21 Flow Model FM of Conception Bay located in Newfoundland, Canada. The area is heavily influenced by semidiurnal tides from the Atlantic Ocean, and wind-driven circulation plays an important role too.  The domain has one open boundary to the North.
 
 This repository contains the setup file, input data and observation data, as well as simulation result data. The simulation result data is available in Zenodo. The data supplied in this repository covers the period from 2014-01-01 to 2022-12-31. There is a spin-up period, so it is recommended to remove the first 2 days of the result data. 
 
