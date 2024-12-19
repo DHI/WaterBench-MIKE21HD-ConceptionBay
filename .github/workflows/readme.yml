@@ -17,7 +17,8 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
+        env: GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with: tinytex: true
       - name: Render README.md to PDF
         run: |
           quarto render README.md --to pdf --output README.pdf
