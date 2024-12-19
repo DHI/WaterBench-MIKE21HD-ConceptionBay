@@ -20,24 +20,6 @@ def get_wl_point_obs():
         wllist.append(o)
     return wllist
 
-def get_u_v_point_obs():
-    """Get current point observations as two lists of PointObservation objects"""
-    qu = ms.Quantity(name="u-current", unit="m/s")
-    qv = ms.Quantity(name="v-current", unit="m/s")
-    ulist = []
-    vlist = []
-    for i, row in df_stn.iterrows():
-        if not Path(obs_fldr + f"{i}_u_v.csv").exists():
-            continue
-        df = pd.read_csv(obs_fldr + f"{i}_u_v.csv", index_col=0) 
-        df.index = pd.to_datetime(df.index, format="ISO8601")   
-        x, y = row['Longitude'], row['Latitude']
-        ou = ms.PointObservation(df["u"], x=x, y=y, name=i, quantity=qu)
-        ulist.append(ou)
-        ov = ms.PointObservation(df["v"], x=x, y=y, name=i, quantity=qv)
-        vlist.append(ov)
-    return ulist, vlist
-
 def get_altimetry_obs(quality=None):
     """Get altimetry observations as list of TrackObservation objects"""
     sat_files = sorted(glob.glob(obs_fldr + "Altimetry_wl_*.csv"))
