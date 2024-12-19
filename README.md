@@ -53,7 +53,7 @@ Separately from the current repository, you can find the output zip file (in Zen
 
 ## Introduction
 
-This folder contains data for a simulation with the MIKE 21 Flow Model FM in Conception Bay located in Newfoundland, Canada. The water level in this area is heavily influenced by semidiurnal tides from the Atlantic Ocean, and wind-driven circulation plays an important role in the area.  The domain has one open boundary to the ocean to the North.
+This folder contains data for a simulation with the MIKE 21 Flow Model FM of Conception Bay located in Newfoundland, Canada. The area is heavily influenced by semidiurnal tides from the Atlantic Ocean, and wind-driven circulation plays an important role too.  The domain has one open boundary to the North.
 
 This repository contains the setup file, input data and observation data, as well as simulation result data. The simulation result data is available in Zenodo. The data supplied in this repository covers the period from 2014-01-01 to 2022-12-31. There is a spin-up period, so it is recommended to remove the first 2 days of the result data. 
 
@@ -71,13 +71,13 @@ A simulation can be performed with the [MIKE modelling software](https://www.dhi
 - the water levels and current velocities on the North boundary
 - wind velocities and air pressure in the domain.
 
-This input data can be found in the [/input](/input) folder. Model parameters, e.g. bed resistance constant, can be calibrated by comparing the model simulations to observational data. 
+This input data can be found in the [/input](/input) folder. Model parameters, e.g., bed resistance constant, can be calibrated by comparing the model simulations to observational data. 
 
 The outputs of the model are given as a timeseries for each mesh element on the spatial domain containing the variables:
 - the surface elevation,
 - the u and v components of the current velocity.
 
-This data can be found as a separate file in [Zenodo](https://doi.org/10.5281/zenodo.14504931). Once a simulation has been run, a log file will be generated. The log-file for the benchmark simulation is found in the folder [/model](/model), and it contains information on the parameters used and the time spent on the simulation. 
+The output data can be found as a separate file in [Zenodo](https://doi.org/10.5281/zenodo.14504931). Once a simulation has been run, a log file will be generated. The log-file for the benchmark simulation is found in the folder [/model](/model), and it contains information on the parameters used and the time spent on the simulation. 
 
 Since all data, including output from a simulation, is given, it is not necessary to run the MIKE simulation. However, it is possible, since a setup file is supplied as well as all of the input data. Running the MIKE software requires a license. Read more about [obtaining a license](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing) and about [academic licensing](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing/academic-licenses). If you already have a license, read the [step-by-step guide](https://manuals.mikepoweredbydhi.help/latest/Coast_and_Sea/MIKE_FM_HD_Step_By_Step.pdf) to learn how to run simulations.
 
