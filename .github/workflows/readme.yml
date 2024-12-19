@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - README.md  # Only trigger the workflow when README.md changes
-  workflow_dispatch:  # Allow manual trigger
 
 jobs:
   render-pdf:
@@ -18,13 +17,10 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with: 
-          tinytex: true
+
       - name: Render README.md to PDF
         run: |
-          quarto render README.md --to pdf --output .publish/README.pdf
+          quarto render README.md --to pdf --output README.pdf
 
       - name: Commit PDF
         run: |
