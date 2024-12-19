@@ -2,7 +2,7 @@
 
 ## Description
 
-**MIKE 21 Flow Model FM** is a hydrodynamic modeling system based on a flexible mesh approach, used for oceanographic, coastal, and estuarine applications. This repository includes a model setup and 10-year model results for Conception Bay in Newfoundland, Canada as well as observational data, and code for model validation.
+**MIKE 21 Flow Model FM** is a hydrodynamic modeling system based on a flexible mesh approach, used for oceanographic, coastal, and estuarine applications. This repository includes a model setup and 9-year model results for Conception Bay in Newfoundland, Canada as well as observational data, and code for model validation.
 
 This dataset is part of the WaterBench series by DHI, supporting open research on water-related challenges. It is intended for educational and research purposes, including model validation, parameter calibration, and machine learning applications. Results should not be used for decision-making.
 
