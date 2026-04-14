@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg)](https://doi.org/10.5281/zenodo.14504931)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14929387.svg)](https://doi.org/10.5281/zenodo.14929387)
 
 # Hydrodynamic model of Conception Bay
 This README file contains practical information and background information on the data. The dataset can be cited as:
